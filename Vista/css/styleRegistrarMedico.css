@@ -1,0 +1,137 @@
+@charset "UFT-8"
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font: bold 20px verdana, geneva, sans-serif;
+}
+
+h2 {
+    font: bold 20px verdana, geneva, sans-serif;
+}
+
+body {
+  text-align: left;
+  background-image: url(Fondo_marmol.jpg);
+  background-size: cover;
+  }
+
+article {
+  background: #fffbcc;
+  border: 1px solid #999999;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+article footer {
+  text-align: right;
+}
+
+#encabezado {
+  background: cornflowerblue;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navcenter {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ #menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+ }
+
+ #menu {
+    background-color: rgb(110, 158, 225);
+    padding: 5px 15px;
+    text-align: center;
+ }
+
+ .contenedordelformulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
+}
+
+ #seccion {
+  text-align: left;
+  float: left;
+  width: 600px;
+  margin: 20px 0px;
+  background-color: cornflowerblue;
+  padding: 2px;
+  padding-left: 2%;
+  padding
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.registrarMedico{
+  display: flex;
+  flex-direction: column;
+}
+
+.grupodeformulario{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  flex: 0 0 40%;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.boton {
+  width: 60%;
+  background: #1f53c5;
+  border: none;
+  padding: 2px;
+  color: white;
+  border: 1px solid #ccc;
+  margin: 2px;
+  margin: 2px 0;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.control {
+  width: 250px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pie {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: cornflowerblue;
+  border: 1px solid #ccc;
+  padding: 1px;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}

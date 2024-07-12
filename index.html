@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/stylePaginaPrincipalIndex.css">
+    <title>Pagina principal - Consultorio Medico DR. Diana Gonzalez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="style" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<div>
+   <header id="encabezado">
+   <h1><center> Consultorio Dr. Diana Gonzalez</center></h1>
+   </header>
+   
+<nav class="navcenter" id="menu">
+    <ul>
+        <li><a href="Vista/registrarPaciente.html">Registrar Pacientes</a></li>
+        <li><a href="Vista/registrarMedico.html">Registrar Medicos</a></li>
+        <li><a href="Vista/registrarEmpleado.html">Registrar Empleados</a></li>
+        <li><a href="Vista/registrarMedico.html">Registrar Medicos</a></li>
+        <li><a href="Vista/registrarCitaMedica.html">Registrar Citas</a></li>
+        <li><a href="Vista/cancelarCitaMedica.html">Cancelar Citas</a></li>
+        <li><a href="Vista/registrarTratamiento.html">Registrar Tratamiento</a></li>
+        <li><a href="Vista/registrarMedicamento.html">Registrar Medicamento</a></li>
+    </ul>
+</nav>
+
+    <section id="seccion">
+         <article class="articulo1">
+             <h2><center>Registrar Cita</a></center></h2>
+             <p><center>Gestiona tus tramites de manera sencilla</center></p>
+         </article>
+
+         <article class="articulo2">
+            <input class="boton" type="submit" value="Gestionar citas">
+            <input class="boton" type="submit" value="Gestionar tratamientos">
+            <input class="boton" type="submit" value="Solicitar medicamentos">
+            <footer>
+              <small>Tus servicios</small>
+           </footer> 
+        </article>
+
+        <article class="articulo3">
+            <h2><center>Noticias y Novedades</center></h2>
+            <img class="noticiasynovedades" src="Imagenes para el consultorio/Cuida tu salud.jpeg" alt="cuidaTusalud">
+        </article>
+    </section>
+
+    <aside id="lateral">
+        
+        <form class="miForma" name="formulario" action="">
+
+            <h2>Formulario Registro</h2>
+
+            Nombre completo: <br>
+            <input class="control" type="text" name="nombres" id="nombres" size="30" placeholder="Inserte nombre completo"><br>
+            Correo: <br>
+            <input class="control" type="email" name="correo" id="correo" size="30" placeholder="Inserte correo"><br>
+            Contraseña: <br>
+            <input class="control" type="password" name="pass" id="pass" size="30" placeholder="Inserte contraseña"><br>
+
+        <center>
+                <p>Estoy de acuerdo con los <br><a href="a">Terminos y condiciones</a></p>
+                <input class="boton" type="submit" value="Registrar">
+        </center>
+        </form>
+
+    </aside>
+
+    <footer id="pie">
+        Informacion de la empresa
+    </footer>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

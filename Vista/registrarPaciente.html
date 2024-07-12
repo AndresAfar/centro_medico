@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Diana Gonzalez - Registrar Paciente</title>
+    <link rel="stylesheet" href="css/styleRegistrarPaciente.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <header id="encabezado">
+           <h1><center>Consultorio Dr. Diana Gonzalez</center></h1> 
+        </header>
+
+        <nav class="navcenter" id="menu">
+            <ul>
+              <li>Inicio</li>
+              <li>Usuarios</li>
+              <li>Servicios</li>
+            </ul>
+        </nav>    
+    
+    <div class="contenedordelformulario">
+        
+        <section  id="seccion">
+            
+            <form action="Controlador/validarRegistrarPaciente" method="post" enctype="text/plain" class="formularioRegistrarpaciente" name="formulario" action="">
+                <h2>Registrar Paciente</h2>
+
+            <div class="grupodeformulario">
+                <label for="identificacion">Identificación:</label>
+                <input class="control" type="number" name="identificacion" id="identificacion" placeholder="Inserta el número de identificación"><br>
+            </div>  
+
+            <div class="grupodeformulario">
+                <label for="nombreCompleto">Nombre completo:</label>
+                <input class="control" type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Inserta el nombre completo"><br>
+            </div>  
+
+            <div class="grupodeformulario">
+                <label for="fechaDenacimiento">Fecha de nacimiento:</label>
+                <input class="control" type="date" name="fechaDenacimiento" id="fechaDenacimiento"><br>
+            </div>  
+
+            <div class="grupodeformulario">
+                <label for="edad">Edad:</label>
+                <input class="control" type="number" name="edad" id="edad" placeholder="Inserta la edad"><br>
+            </div>  
+
+            <div class="grupodeformulario">
+                <label for="lugarDenacimiento">Lugar de nacimiento:</label>
+                <input class="control" type="text" name="lugarDenacimiento" id="lugarDenacimiento" placeholder="Inserta el lugar de nacimiento"><br>
+            </div>  
+
+            <div class="grupodeformulario">
+                <label for="direccionDeresidencia">Dirección de residencia:</label>
+                <input class="control" type="text" name="direccionDeresidencia" id="direccionDeresidencia" placeholder="Inserta dirección de residencia"><br>
+            </div>  
+
+            <div class="grupodeformulario">
+                <label for="correoElectronico">Correo electrónico:</label>
+                <input class="control" type="email" name="correoElectronico" id="correoElectronico" placeholder="Inserta correo electrónico"><br>
+            </div>  
+            
+            <div class="grupodeformulario">
+                <label for="celular">Celular:</label>
+                <input class="control" type="number" name="celular" id="celular" placeholder="Inserta número de celular"><br>
+            </div>  
+
+                
+                <center>
+                    <input class="boton" type="submit" value="Registrar Paciente">
+                </center>
+            </form>
+        </section>
+    </div>
+        
+              
+            
+               
+            <footer id="pie">
+                Informacion del centro medico: <br>
+                Celular: 316 483 9049 - Correo: drdianagonzalezsalud@gmail.com
+            </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

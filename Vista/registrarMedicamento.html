@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Diana Gonzalez - Registrar medico </title>
+    <link rel="stylesheet" href="css/styleRegistrarMedicamento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <header id="encabezado">
+            <h1><center>Consultorio Dr. Diana Gonzalez</center></h1>
+        </header>
+
+        <nav class="navcenter" id="menu">
+            <ul>
+              <li>Inicio</li>
+              <li>Usuarios</li>
+              <li>Servicios</li>
+            </ul>
+        </nav> 
+
+        <div class="contenedordelformulario">
+            <section id="seccion">
+                <form action="Controlador/validarRegistrarMedicamento" method="post" enctype="text/plain" class="registrarMedicamento" name="formulario" action="">
+                    <h2>Registrar medicamento</h2>
+
+                    <div class="grupodeformulario">
+                        <label for="Nombre del paciente:">Nombre del paciente: </label><br>
+                        <input class="control" type="text" name="nombreDelpaciente" id="nombreDelpaciente" size="30" placeholder="Insertar nombre del paciente"> <br>
+                    </div>
+
+                    <div class="grupodeformulario">
+                        <label for="Medico remitente:">Medico remitente:</label> <br>
+                        <input class="control" type="text" name="medicoRemitente" id="medicoRemitente" size="30" placeholder="Inserta el nombre del medico"> <br>
+                    </div>
+    
+                    <div class="grupodeformulario">
+                        <label for="Historia clinica:">Historia clinica:</label>  <br>
+                        <input class="control" type="text" name="historiaClinica" id="historiaClinica" size="30" placeholder="Inserte la historia clinica"> <br>
+                    </div>
+                   
+                    <div class="grupodeformulario">
+                        <label for="Tratamiento:">Tratamiento:</label>  <br>
+                        <input class="control" type="text" name="tratamiento" id="tratamiento" size="30" placeholder="Inserte el tratamiento"> <br>
+                    </div>
+                    
+                    <div class="grupodeformulario">
+                        <label for="Medicamento:">Medicamento:</label> <br>
+                        <input class="control" type="text" name="medicamento" id="medicamento" size="30" placeholder="Inserte el medicamento"> <br>
+                    </div>
+
+                    <div class="grupodeformulario">
+                        <label for="Indicaciones de medicamento:">Indicaciones de medicamento:</label>  <br>
+                        <input class="control" type="text" name="indicacionesDemedicamento" id="inidcacionesDemedicamentos" size="30" placeholder="Inserte las indicaciones de consumo"> <br>
+                    </div>
+
+                    <div class="grupodeformulario">
+                        <label for="Fecha de registro:">Fecha de registro:</label> <br>
+                        <input class="control" type="date" name="fechaDeregistro" name="fechaDeregistro" size="30"> <br><br>
+                    </div>
+    
+                    <center>
+                        <input class="boton" type="submit" value="Registrar medicamento">
+                    </center>
+    
+                </form>
+
+            </section>
+        </div>
+
+        <footer id="pie">
+            Informacion del centro medico: <br>
+            Celular: 316 483 9049 - Correo: drdianagonzalezsalud@gmail.com
+        </footer>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
