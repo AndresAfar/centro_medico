@@ -1,5 +1,7 @@
 <?php
 
+require_once 'conexion.php'; 
+
 class Medicamento 
 {
 	//Definición de Atributos
@@ -14,7 +16,7 @@ class Medicamento
     private $Conexion;
 
 	//Método Constructor
-    public function crearMedicamento($codigoMedicina, $nombre, $contraindicaciones, $marca, $fechaCaducidad, $cantidad, $tamaño, $tratamientoMedico) {
+    public function crearMedicamentos($codigoMedicina, $nombre, $contraindicaciones, $marca, $fechaCaducidad, $cantidad, $tamaño, $tratamientoMedico) {
         $this->codigoMedicina = $codigoMedicina;
         $this->nombre = $nombre;
         $this->contraindicaciones = $contraindicaciones;
@@ -23,6 +25,10 @@ class Medicamento
         $this->cantidad = $cantidad;
         $this->tamaño = $tamaño;
         $this->tratamientoMedico = $tratamientoMedico;
+    }
+
+    public function setConexion($conexion) {
+        $this->Conexion = $conexion;
     }
 
 	//Definición de Métodos 
@@ -95,7 +101,7 @@ class Medicamento
     //Crear Medicamento
     public function crearMedicamento() {
         $this->Conexion = Conectarse();
-        $sql = "INSERT INTO medicamentos(codigoMedicina, nombre, contraindicaciones, marca, fechaCaducidad, cantidad, tamaño, tratamientoMedico) VALUES ('$this->codigoMedicina', '$this->nombre', '$this->contraindicaciones', '$this->marca', '$this->fechaCaducidad', '$this->cantidad', '$this->tamaño', '$this->tratamientoMedico')";
+        $sql = "INSERT INTO medicamento( mediNombre, mediContraindicaciones, mediMarcaMediacamento, mediFechaCaducidad, mediCantidadPresentacion) VALUES ('$this->nombre', '$this->contraindicaciones', '$this->marca', '$this->fechaCaducidad', '$this->cantidad')";
         $resultado = $this->Conexion->query($sql);
         $this->Conexion->close();
         return $resultado;

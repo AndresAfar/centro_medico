@@ -16,7 +16,7 @@ class Paciente
     private $Conexion;
 
 	//Método Constructor
-    public function crearPaciente($codigoPaciente, $idPaciente, $nombres, $apellidos, $sexo, $fechaNacimiento, $edad, $telefono, $ciudad, $direccionPaciente) {
+    public function crearPacientes($codigoPaciente, $idPaciente, $nombres, $apellidos, $sexo, $fechaNacimiento, $edad, $telefono, $ciudad, $direccionPaciente) {
         $this->codigoPaciente = $codigoPaciente;
         $this->idPaciente = $idPaciente;
         $this->nombres = $nombres;

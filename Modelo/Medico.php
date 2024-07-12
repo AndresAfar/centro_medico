@@ -1,5 +1,7 @@
 <?php
 
+require_once 'conexion.php';
+
 class Medico 
 {
 	//Definición de Atributos
@@ -14,7 +16,7 @@ class Medico
     private $Conexion;
 
 	//Método Constructor
-    public function crearMedico($codigoMedico, $idMedico, $nombres, $apellidos, $telefono, $pais, $especialidad, $salario) {
+    public function crearMedicos($codigoMedico, $idMedico, $nombres, $apellidos, $telefono, $pais, $especialidad, $salario) {
         $this->codigoMedico = $codigoMedico;
         $this->idMedico = $idMedico;
         $this->nombres = $nombres;
@@ -23,6 +25,10 @@ class Medico
         $this->pais = $pais;
         $this->especialidad = $especialidad;
         $this->salario = $salario;
+    }
+
+    public function setConexion($conexion) {
+        $this->Conexion = $conexion;
     }
 
 	//Definición de Métodos 

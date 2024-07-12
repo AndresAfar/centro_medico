@@ -13,7 +13,7 @@ class Tratamiento_medico
     private $Conexion;
 
     //Método Constructor
-    public function crearTratamiento($codigoPaciente, $codigoMedico, $codigoTratamiento, $formulaMedicamento, $diagnostico, $medicamento, $codigoMedicamento) {
+    public function crearTratamientos($codigoPaciente, $codigoMedico, $codigoTratamiento, $formulaMedicamento, $diagnostico, $medicamento, $codigoMedicamento) {
         $this->codigoPaciente = $codigoPaciente;
         $this->codigoMedico = $codigoMedico;
         $this->codigoTratamiento = $codigoTratamiento;

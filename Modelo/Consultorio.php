@@ -8,7 +8,7 @@ class Consultorio
     private $Conexion;
 
 	//Método Constructor
-    public function crearConsultorio($codigoConsultorio, $numeroConsultorio) {
+    public function crearConsultorios($codigoConsultorio, $numeroConsultorio) {
         $this->codigoConsultorio = $codigoConsultorio;
         $this->numeroConsultorio = $numeroConsultorio;
     }

@@ -15,7 +15,7 @@ class Persona
     private $Conexion;
 
 	//Método Constructor
-    public function crearPersona($idPaciente, $nombres, $apellidos, $sexo, $fechaNacimiento, $edad, $telefono, $ciudad, $direccionPaciente) {
+    public function crearPersonas($idPaciente, $nombres, $apellidos, $sexo, $fechaNacimiento, $edad, $telefono, $ciudad, $direccionPaciente) {
         $this->idPaciente = $idPaciente;
         $this->nombres = $nombres;
         $this->apellidos = $apellidos;

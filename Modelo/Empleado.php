@@ -17,7 +17,7 @@ class Empleado
     private $Conexion;
 
 	//Método Constructor
-    public function crearEmpleado($codigoEmpleado, $idEmpleado, $nombres, $apellidos, $fechaNacimiento, $edad, $telefono, $ciudad, $direccionEmpleado, $salario, $cargo) {
+    public function crearEmpleados($codigoEmpleado, $idEmpleado, $nombres, $apellidos, $fechaNacimiento, $edad, $telefono, $ciudad, $direccionEmpleado, $salario, $cargo) {
         $this->codigoEmpleado = $codigoEmpleado;
         $this->idEmpleado = $idEmpleado;
         $this->nombres = $nombres;
